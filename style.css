@@ -1,0 +1,87 @@
+/* 기본 여백 초기화 및 폰트 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #99bbff;
+    /* 시원한 블루 톤 적용 */
+    padding: 0 10%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 상단 네비게이션 바 (학번 작게 + 메뉴 우측 정렬) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.logo {
+    font-size: 16px;
+    /* 학번 크기를 작게 줄였습니다 */
+    font-weight: 700;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #99bbff;
+    margin-left: 35px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 메인 콘텐츠를 화면 정가운데로 정렬 */
+/* 메인 콘텐츠 레이아웃 (중앙 정렬 유지) */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 세로 정중앙 */
+    align-items: center;
+    /* 가로 정중앙 */
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* [수정] 메인 타이틀 글씨들을 서로 더 모아주는 설정 */
+/* 타이틀 스타일 - 글씨를 완전히 밀착시키는 설정 */
+/* 타이틀 스타일 - 글씨 밀착 + 테두리 박스 추가 */
+/* 타이틀 스타일 - 배경색 채우고 흰색 텍스트로 변경 */
+.hero-title {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 0.85;
+    /* 글씨 밀착 유지 */
+    letter-spacing: -1px;
+
+    /* [새로 변경된 테두리 박스 설정] */
+    background-color: #99bbff;
+    /* 박스 내부를 시원한 연블루톤으로 꽉 채움 */
+    color: #ffffff;
+    /* [변경] 박스 안에 들어갈 글씨 색상을 흰색으로! */
+
+    /* 박스 테두리는 없애거나 아주 얇게 유지 */
+    border: none;
+    /* 배경색이 있으므로 테두리는 안 보여도 무방합니다 */
+
+    /* 박스 안쪽 여백 (배경색이 있으므로 여백이 더 넉넉해야 시원해 보임) */
+    padding: 40px 60px;
+    /* [조정] 위아래 40px, 좌우 60px로 여백 확대 */
+
+    display: inline-block;
+    /* 박스가 글씨 크기에 딱 맞도록 설정 */
+    border-radius: 12px;
+    /* [조정] 둥근 모서리를 더 크게 주어 부드러운 느낌 */
+
+    /* 타이틀 박스와 아래 스킬 섹션 사이의 여백 */
+    margin-bottom: 120px;
+}

@@ -1,0 +1,133 @@
+/* 1. 전체 기본 세팅 (폰트 및 중앙 정렬 기본값) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 60px 20px;
+    max-width: 800px;
+    /* 본문이 너무 퍼지지 않게 폭을 제한 */
+    margin: 0 auto;
+    /* 화면 정가운데로 정렬 */
+    line-height: 1.7;
+}
+
+/* 메인 돌아가기 버튼 스타일 */
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #99bbff;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* 2. 상단 헤더 영역 (현진님 취향의 블루 박스 적용!) */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #99bbff;
+    /* 메인 페이지와 통일한 블루 박스 */
+    border-radius: 12px;
+    color: #ffffff;
+    /* 박스 안 글씨들은 흰색으로 반전 */
+    margin-bottom: 40px;
+}
+
+header img {
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    /* 책 표지에 예쁜 그림자 추가 */
+    margin-bottom: 25px;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #ffffff;
+    /* 흰색 글씨 */
+}
+
+header p {
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+header u {
+    text-decoration: none;
+    /* 밑줄 대신 깔끔하게 */
+    font-weight: 700;
+}
+
+/* 구분선 스타일 깔끔하게 변경 */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #eef2f7;
+    margin: 40px 0;
+}
+
+/* 3. 본문 섹션 스타일 */
+section {
+    margin-bottom: 40px;
+}
+
+/* 섹션마다 소제목에 연블루 포인트 주기 */
+section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #99bbff;
+    /* 소제목들을 연블루로 통일 */
+    margin-bottom: 15px;
+    position: relative;
+}
+
+section p {
+    font-size: 16px;
+    color: #555555;
+    text-align: justify;
+    /* 글자 양끝 정렬로 깔끔하게 */
+}
+
+/* 목차 순서 리스트 스타일 */
+ol {
+    list-style-position: inside;
+    /* 번호가 안으로 예쁘게 들어오게 */
+    padding-left: 10px;
+}
+
+ol li {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #f0f4f8;
+    /* 목차 사이에 아주 연한 구분선 */
+}
+
+/* 4. 하단 구매 링크 버튼 스타일 */
+.buy-section p a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #99bbff;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-weight: 700;
+    border-radius: 30px;
+    /* 둥근 캡슐 모양 버튼 */
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 5px 15px rgba(153, 187, 255, 0.3);
+}
+
+/* 구매 버튼에 마우스 올렸을 때 효과 */
+.buy-section p a:hover {
+    background-color: #7aa5f5;
+    transform: translateY(-2px);
+}
